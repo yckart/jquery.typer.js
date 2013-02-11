@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width'>
+
+        <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Numans'>
+        <style>
+            html,body{margin:0; padding:0; height:100%; overflow:hidden}
+            body {
+                color: black;
+                text-align: center;
+                font-family: 'Numans', sans-serif;
+                white-space: nowrap;
+
+                background: white;
+                background: -moz-radial-gradient(center, ellipse cover, white 0%, #f6f6f6 47%, #ededed 100%);
+                background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, white), color-stop(47%, #f6f6f6), color-stop(100%, #ededed));
+                background: -webkit-radial-gradient(center, ellipse cover, white 0%, #f6f6f6 47%, #ededed 100%);
+                background: -o-radial-gradient(center, ellipse cover, white 0%, #f6f6f6 47%, #ededed 100%);
+                background: -ms-radial-gradient(center, ellipse cover, white 0%, #f6f6f6 47%, #ededed 100%);
+                background: radial-gradient(ellipse at center, white 0%, #f6f6f6 47%, #ededed 100%);
+                filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100, finishopacity=90, style=2);
+            }
+            span { color:#0ae }
+        </style>
+
+        <title>jquery.typer.js | The typewriter effect</title>
+    </head>
+
+    <body>
+        <div id="typer">foo</div>
+
+        <script src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
+        <script src='jquery.typer.js'></script>
+        <script>
+            var win = $(window),
+                foo = $('#typer');
+
+            foo.typer(['<i>Anyone</i> <u>is</u> <b>awesome</b>!', 'Foo is <span>not</span> equal to bar.', 1337]);
+
+            // unneeded...
+            win.resize(function(){
+                var fontSize = Math.max(Math.min(win.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
+
+                foo.css({
+                    fontSize: fontSize * .8 + 'px',
+                    lineHeight: win.height() + 'px'
+                });
+            }).resize();
+        </script>
+    </body>
+</html>
