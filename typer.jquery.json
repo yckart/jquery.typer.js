@@ -3,17 +3,18 @@
     "title": "jQuery Typer",
     "description": "The typewriter effect.",
     "keywords": [
-        "type"
+        "type",
         "typer",
         "typing",
         "typewriter",
         "write",
         "writer",
-        "writing",
+        "writing"
     ],
     "version": "0.0.1",
     "author": {
         "name": "Yannick Albert",
+        "email": "mail@yckart.com",
         "url": "https://github.com/yckart"
     },
     "licenses": [
