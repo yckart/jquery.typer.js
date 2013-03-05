@@ -9,9 +9,10 @@
 $.fn.typer = function(text, options){
     options = $.extend({}, {
         char: '',
-        delay: 4000,
-        duration: 600,
+        delay: 1,
+        duration: 1,
         endless: true,
+        delaychar:1000,
         onType: $.noop,
         afterWord: $.noop
     }, options || text);
@@ -34,7 +35,8 @@ $.fn.typer = function(text, options){
             if( isTag ){
                 typetext(i);
             } else {
-                setTimeout(typetext, options.duration/10, i);
+                //the change
+                setTimeout(typetext, options.duration*options.delaychar, i);
             }
         } else {
             c = 0;
