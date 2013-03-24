@@ -1,5 +1,5 @@
 /*!
- * jquery.typer.js 0.0.2 - https://github.com/yckart/jquery.typer.js
+ * jquery.typer.js 0.0.4 - https://github.com/yckart/jquery.typer.js
  * The typewriter effect
  *
  * Copyright (c) 2013 Yannick Albert (http://yckart.com)
