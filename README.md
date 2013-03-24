@@ -9,6 +9,8 @@
  [@yckart](http://twitter.com/yckart) #jquery #typer
  [http://yckart.com](http://yckart.com/)
 
+### Thanks
+- http://stackoverflow.com/a/13391131/1250044
 
 ###License
 Copyright (c) 2013 Yannick Albert ([http://yckart.com/](http://yckart.com/))

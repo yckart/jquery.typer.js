@@ -6,8 +6,11 @@
 
         <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Numans'>
         <style>
-            html,body{margin:0; padding:0; height:100%; overflow:hidden}
+            html,body{margin:0; padding:0; height:100%; }
             body {
+                display: table;
+                width: 100%;
+
                 color: black;
                 text-align: center;
                 font-family: 'Numans', sans-serif;
@@ -22,6 +25,14 @@
                 background: radial-gradient(ellipse at center, white 0%, #f6f6f6 47%, #ededed 100%);
                 filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100, finishopacity=90, style=2);
             }
+
+            div {
+                display: table-cell;
+                vertical-align: middle;
+
+                text-align: center;
+            }
+
             span { color:#0ae }
         </style>
 
@@ -44,8 +55,7 @@
                 var fontSize = Math.max(Math.min(win.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
 
                 foo.css({
-                    fontSize: fontSize * .8 + 'px',
-                    lineHeight: win.height() + 'px'
+                    fontSize: fontSize * .8 + 'px'
                 });
             }).resize();
         </script>
